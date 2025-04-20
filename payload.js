@@ -14,33 +14,31 @@ document.write(`
       color: white;
     }
 
-    body::before {
-      content: "";
+    .background-img {
       position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Kurdistan.svg') center center no-repeat;
-      background-size: cover;
-      z-index: -2;
+      object-fit: cover;
+      z-index: -1;
     }
 
     .center-image {
       position: absolute;
       top: 50%;
       left: 50%;
+      width: 200px;
+      height: auto;
       transform: translate(-50%, -50%);
       animation: spin 6s linear infinite;
       z-index: 0;
-      width: 200px;
-      height: auto;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
     @keyframes spin {
-      from { transform: translate(-50%, -50%) rotate(0deg); }
-      to { transform: translate(-50%, -50%) rotate(360deg); }
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
     }
 
     .glitch {
@@ -67,11 +65,12 @@ document.write(`
   </style>
 </head>
 <body>
+  <img class="background-img" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Kurdistan.svg">
   <img class="center-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/National_Socialist_swastika.svg/300px-National_Socialist_swastika.svg.png">
   <div class="glitch">
     <div><strong>HACKED BY ASTRA</strong></div>
     <div style="font-size:0.8em;">FREE KURDISTAN</div>
-    <div style="font-size:0.6em;">Thanks to illum, wixp, mllef and Nyx404</div>
+    <div style="font-size:0.6em;">Thanks to ✟lum, WI卐P, MᛋᛋEF and ꖦYX404</div>
   </div>
 </body>
 </html>
